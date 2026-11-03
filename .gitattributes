@@ -1,0 +1,12 @@
+# Normalize line endings: LF in the repo, native (CRLF on Windows) in the working tree
+* text=auto
+
+# Keep Windows scripts as CRLF on every OS
+*.ps1 text eol=crlf
+*.psm1 text eol=crlf
+*.psd1 text eol=crlf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Shell scripts must stay LF
+*.sh text eol=lf
